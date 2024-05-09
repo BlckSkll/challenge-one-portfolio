@@ -1,377 +1,326 @@
-/*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
+/* CSS Reset / Normalize */
+/* Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas */
 
 :root{
-   --cor-de-fundo: #100D28; 
-   --cor-de-texto:#FFFFFF;
-   --cor-texto-secundario:#FF5055;
-   --cor-outra:#adbdf5;  
-}
-
-body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'JetBrains Mono';
-    margin: 0;
-    line-height: 1;
-}
-
-ol, ul,li {
-    list-style: none;
-    padding-right: 1rem;
-}
-
-a{
-    text-decoration: none;
-    color: var(--cor-de-texto);
-}
-
-
-
-
-/*Sessão Menu*/
-
-.menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 50%;
-    align-items: center;
-    font-family: JetBrains Mono;
-    font-size: 0.7rem;
-    color: var(--cor-de-texto); 
-    margin-right: 15%;
-    position: fixed; /* Torna o menu fixo na tela */
-    top: 0; /* Posiciona o menu no topo da tela */
-    width: 100%; /* Define a largura do menu */
-    background-color: var(--cor-de-fundo); /* Cor de fundo do menu */
-    z-index: 1000; /* Define a ordem de sobreposição do menu */
-    padding: 1rem; /* Adiciona um espaçamento interno ao menu */
-  
-}
-
-.header__img{
-    margin-left:15% ;
-
-}
-
-.menu__list{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-
-/*Sessão Title*/
-
-.title__div{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    gap: 1rem;  
-}
-
-.title__profile{  /*foto*/
-    width: 17rem;
-    height: auto;
-    margin-top: 12%;
-    margin-right: 2%;
-    margin-bottom: 5%;
-}
-
-.title__bio{ /*olá*/
-    font-size: 20px;
-    color: var(--cor-texto-secundario);
-    font-weight: 600;
-    margin-top: 22%; 
-    margin-left: 6%;
-}
-
-.title__subsection{  /*sobre mim texto*/
-    font-size: 13px;
-    color: var(--cor-de-texto);
-    font-weight: 100;
-    text-align: justify;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-
-.title__network{ /*redes sociais*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 0.8rem;
-    align-items: center;
-    font-family: JetBrains Mono;
-    font-size: 0.7rem;
-    color: var(--cor-de-texto);
-    
-
-}
-
-.title__network__item{ /*icones contato*/
-    width: 20px;
-    height: auto;
-    margin-top: 1rem;
-
-}
-
-/*Sessão skills*/
-
-.skills{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.skills__title{ /*palavra skills*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 25px;
-    color: var(--cor-texto-secundario);
-    font-weight: 600;
-    margin-top: 5%;
-    margin-bottom: 10%;
-
-}
-
-.skills__name{ /* skills descrição*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 0.7rem;
-    color: var(--cor-de-texto);  
-    gap: 5rem;
-}
-
-.skills__line{  /* skills icons*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 5%;
-
-
-}
-
-
-/*Sessão Hobbies*/
-
-
-
-.hobbies__title{  /*palavra hobbies*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 25px;
-    color: var(--cor-texto-secundario);
-    font-weight: 600;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    
-}
-.hobbies__line{  /*Hobbies icons / texto alinhamento*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    margin-top: 15%;
-    margin-bottom: 10%;
-   
-}
-
-.hobbies__img{ /*Hobbies icons*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 0.8rem;
-   
-}
-
-.hobbies__name{ /*Hobbies descrição*/
-    font-size: 0.7rem;
-    color: var(--cor-de-texto);  
-    gap: 5rem;
-  
-
-}
-
-/* Experiência Acadêmica*/
-
-.academic__courses{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.academic__courses__item__img{ /*logos institucionais*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    width: 70px;
-    height: auto;
-    margin-top: 10rem;
-    margin-left: 20%;
-    align-items: center;
-    gap: 10%;
-
-}
-.academic__title{ /*txt experiência acadêmica*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: var(--cor-texto-secundario);
-    font-weight: 600;
-    margin-top: 5%; 
-    margin-left: 3rem;
-   
-}
-
-.academic__courses__item__title{ /*nome curso*/
-    font-size: 0.7rem;
-    color: var(--cor-de-texto);  
-    text-align: center;
-    
-}
-
-.academic__courses__item__subtitle{ /*descrição curso*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 0.6rem;
-    color: var(--cor-de-texto);  
-    text-align: center;
-    
-}
-
-
-/*Contato*/
-
-
-.formcontato__title{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 30px;
-    color: var(--cor-texto-secundario);
-    font-weight: 600;
-    margin-top: 10%; 
-    margin-right: 10%;
-  
-
-}
+    --cor-de-fundo: #100D28; 
+    --cor-de-texto: #FFFFFF;
+    --cor-texto-secundario: #FF5055;
+    --cor-outra: #adbdf5;  
+ }
  
-.formcontato__text{ /* palavra contato*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: var(--cor-texto-secundario);
-    font-weight: 600;
-    margin-top: 5%; 
-    bottom: 20%;
-    margin-left: 3rem;
-}
-
-.formcontato__form{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: var(--cor-texto-secundario);
-    font-weight: 600;
-    margin-top: 5%; 
-    bottom: 20%;
-    margin-left: 3rem;
-}
-
-.formcontato {
-    background-color: var(--cor-de-fundo);
-    padding: 1rem 0;
-    text-align: center; 
+ body {
+     box-sizing: border-box;
+     background-color: var(--cor-de-fundo);
+     font-family: 'JetBrains Mono';
+     margin: 0;
+     line-height: 1;
+ }
+ 
+ ol, ul, li {
+     list-style: none;
+     padding-right: 1rem;
+ }
+ 
+ a{
+     text-decoration: none;
+     color: var(--cor-de-texto);
+ }
+ 
+ /* Sessão Menu */
+ 
+ .menu {
+     display: grid;
+     grid-template-columns: repeat(4, auto); /* Cria quatro colunas com largura automática */
+     justify-content: end;
+     align-items: center;
+     font-family: JetBrains Mono;
+     font-size: 0.7rem;
+     color: var(--cor-de-texto); 
+     margin-right: 15%;
+     position: fixed; /* Torna o menu fixo na tela */
+     top: 0; /* Posiciona o menu no topo da tela */
+     width: 100%; /* Define a largura do menu */
+     background-color: var(--cor-de-fundo); /* Cor de fundo do menu */
+     z-index: 1000; /* Define a ordem de sobreposição do menu */
+     padding: 1rem; /* Adiciona um espaçamento interno ao menu */
+ }
+ 
+ .header__img {
+     margin-left: 15%;
+ }
+ 
+ .menu__list {
+     display: flex;
+     gap: 1rem;
+ }
+ 
+ 
+/* Sessão Title */
+.title__div {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row-reverse; /* Direção dos itens na linha invertida */
+    justify-content: center; /* Alinhar itens ao centro */
+    gap: 1rem; /* Espaço entre os itens */
   }
   
-  /* Formulário */
-.formcontato__form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto; 
-    width: 50%; 
+  .title__profile {
+    width: 17rem; /* Largura da imagem do perfil */
+    height: auto; /* Altura automática */
+    margin-top: 12%; /* Margem superior */
+    margin-right: 2%; /* Margem direita */
+    margin-bottom: 5%; /* Margem inferior */
   }
   
-.formcontato__input{
-    width: 60%;
-    padding: 0.5rem; 
-    margin-bottom: 0.3rem; 
-    border: 1px solid var(--cor-outra);
-    border-radius: 4px;
-    height: 1rem; 
-    font-family: JetBrains Mono;   
-}
-
-
-.formcontato__textarea {    
-    width: 60%;
-    padding: 0.5rem; 
-    margin-bottom: 0.5rem; 
-    border: 1px solid var(--cor-outra);
-    border-radius: 4px;
-    height: 35%; 
-    resize: vertical;
+  .title__bio {
+    font-size: 20px; /* Tamanho de fonte */
+    color: var(--cor-texto-secundario); /* Cor do texto secundário */
+    font-weight: 600; /* Peso da fonte */
+    margin-top: 22%; /* Margem superior */
+    margin-left: 6%; /* Margem esquerda */
   }
   
-.formcontato__botao {   /* botão */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    height: 10%;
-    background-color: var(--cor-outra);
-    color: var(--cor-de-fundo);
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: JetBrains Mono;
-    font-size: 0.8rem;
-    color: var(--cor-de-texto);
-    text-align: center;
-   
+  .title__subsection {
+    font-size: 13px; /* Tamanho de fonte */
+    color: var(--cor-de-texto); /* Cor do texto usando variável */
+    font-weight: 100; /* Peso da fonte */
+    text-align: justify; /* Alinhar texto justificado */
+    margin-left: 3rem; /* Margem esquerda */
+    margin-right: 3rem; /* Margem direita */
   }
   
-.formcontato__botao:hover {
-    background-color:var(--cor-texto-secundario);
-  }
-
-.formcontato__error__mensage{
-    font-family: JetBrains Mono;
-    font-size: 0.7rem;
-    color: var(--cor-de-texto);
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-
-  }
-
-  .formcontato__success__message{
-    font-family: JetBrains Mono;
-    font-size: 0.7rem;
-    color: var(--cor-de-texto);
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-
+  .title__network {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    gap: 0.8rem; /* Espaço entre os itens */
+    align-items: center; /* Alinhar itens verticalmente */
+    font-family: JetBrains Mono; /* Fonte do texto */
+    font-size: 0.7rem; /* Tamanho de fonte */
+    color: var(--cor-de-texto); /* Cor do texto usando variável */
   }
   
-/*footeer*/
-
-.footer__rodape{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color:var(--cor-texto-secundario);
-    font-size: small;
-    margin-right: 14%;
-    margin-top: 10%;
-}
+  .title__network__item {
+    width: 20px; /* Largura do ícone */
+    height: auto; /* Altura automática */
+    margin-top: 1rem; /* Margem superior */
+  }
+  
+ 
+ /*Sessão skills*/
+ 
+/* Sessão Skills */
+.skills {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: column; /* Direção dos itens em coluna */
+    justify-content: center; /* Alinhar itens ao centro */
+  }
+  
+  .skills__title {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    font-size: 25px; /* Tamanho de fonte */
+    color: var(--cor-texto-secundario); /* Cor do texto secundário */
+    font-weight: 600; /* Peso da fonte */
+    margin-top: 5%; /* Margem superior */
+    margin-bottom: 10%; /* Margem inferior */
+  }
+  
+  .skills__name {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    font-size: 0.7rem; /* Tamanho de fonte */
+    color: var(--cor-de-texto); /* Cor do texto usando variável */
+    gap: 5rem; /* Espaço entre os itens */
+  }
+  
+  .skills__line {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    margin-bottom: 5%; /* Margem inferior */
+  }
+  
+  /* Sessão Hobbies */
+  .hobbies__title {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    font-size: 25px; /* Tamanho de fonte */
+    color: var(--cor-texto-secundario); /* Cor do texto secundário */
+    font-weight: 600; /* Peso da fonte */
+    margin-top: 5%; /* Margem superior */
+    margin-bottom: 5%; /* Margem inferior */
+  }
+  
+  .hobbies__line {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    text-align: center; /* Alinhar texto centralizado */
+    margin-top: 15%; /* Margem superior */
+    margin-bottom: 10%; /* Margem inferior */
+  }
+  
+  .hobbies__img {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    gap: 0.8rem; /* Espaço entre os itens */
+  }
+  
+  .hobbies__name {
+    font-size: 0.7rem; /* Tamanho de fonte */
+    color: var(--cor-de-texto); /* Cor do texto usando variável */
+    gap: 5rem; /* Espaço entre os itens */
+  }
+  
+  /* Experiência Acadêmica */
+  .academic__courses {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    align-items: center; /* Alinhar itens verticalmente */
+  }
+  
+  .academic__courses__item__img {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: space-around; /* Espaço entre os itens */
+    width: 70px; /* Largura da imagem */
+    height: auto; /* Altura automática */
+    margin-top: 10rem; /* Margem superior */
+    margin-left: 20%; /* Margem esquerda */
+    align-items: center; /* Alinhar itens verticalmente */
+    gap: 10%; /* Espaço entre os itens */
+  }
+  
+  .academic__title {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    color: var(--cor-texto-secundario); /* Cor do texto secundário */
+    font-weight: 600; /* Peso da fonte */
+    margin-top: 5%; /* Margem superior */
+    margin-left: 3rem; /* Margem esquerda */
+  }
+  
+  .academic__courses__item__title {
+    font-size: 0.7rem; /* Tamanho de fonte */
+    color: var(--cor-de-texto); /* Cor do texto usando variável */
+    text-align: center; /* Alinhar texto centralizado */
+  }
+  
+  .academic__courses__item__subtitle {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    font-size: 0.6rem; /* Tamanho de fonte */
+    color: var(--cor-de-texto); /* Cor do texto usando variável */
+    text-align: center; /* Alinhar texto centralizado */
+  }
+  
+  /* Contato */
+  .formcontato__title {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    font-size: 30px; /* Tamanho de fonte */
+    color: var(--cor-texto-secundario); /* Cor do texto secundário */
+    font-weight: 600; /* Peso da fonte */
+    margin-top: 10%; /* Margem superior */
+    margin-right: 10%; /* Margem direita */
+  }
+  /* Contato */
+.formcontato__text { /* Palavra "Contato" */
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    color: var(--cor-texto-secundario); /* Cor do texto secundário */
+    font-weight: 600; /* Peso da fonte */
+    margin-top: 5%; /* Margem superior */
+    bottom: 20%; /* Alinhamento inferior */
+    margin-left: 3rem; /* Margem esquerda */
+  }
+  
+  .formcontato__form {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: column; /* Direção dos itens em coluna */
+    margin: 0 auto; /* Margem automática nas laterais */
+    width: 50%; /* Largura do formulário */
+  }
+  
+  .formcontato__input {
+    width: 60%; /* Largura do input */
+    padding: 0.5rem; /* Espaçamento interno */
+    margin-bottom: 0.3rem; /* Margem inferior */
+    border: 1px solid var(--cor-outra); /* Borda do input */
+    border-radius: 4px; /* Raio da borda */
+    height: 1rem; /* Altura do input */
+    font-family: JetBrains Mono; /* Fonte do input */
+  }
+  
+  .formcontato__textarea {
+    width: 60%; /* Largura do textarea */
+    padding: 0.5rem; /* Espaçamento interno */
+    margin-bottom: 0.5rem; /* Margem inferior */
+    border: 1px solid var(--cor-outra); /* Borda do textarea */
+    border-radius: 4px; /* Raio da borda */
+    height: 35%; /* Altura do textarea */
+    resize: vertical; /* Permitir redimensionamento vertical */
+  }
+  
+  .formcontato__botao { /* Botão de envio */
+    display: flex; /* Usar flexbox para layout */
+    align-items: center; /* Alinhar itens verticalmente */
+    justify-content: center; /* Alinhar itens ao centro */
+    width: 20%; /* Largura do botão */
+    height: 10%; /* Altura do botão */
+    background-color: var(--cor-outra); /* Cor de fundo do botão */
+    color: var(--cor-de-fundo); /* Cor do texto do botão */
+    padding: 1rem 2rem; /* Espaçamento interno do botão */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Raio da borda */
+    cursor: pointer; /* Cursor ao passar por cima */
+    transition: background-color 0.3s ease; /* Transição suave */
+    font-family: JetBrains Mono; /* Fonte do botão */
+    font-size: 0.8rem; /* Tamanho de fonte */
+    color: var(--cor-de-texto); /* Cor do texto do botão */
+    text-align: center; /* Alinhar texto ao centro */
+  }
+  
+  .formcontato__botao:hover {
+    background-color: var(--cor-texto-secundario); /* Cor de fundo ao passar por cima */
+  }
+  
+  .formcontato__error__message {
+    font-family: JetBrains Mono; /* Fonte da mensagem de erro */
+    font-size: 0.7rem; /* Tamanho de fonte */
+    color: var(--cor-de-texto); /* Cor do texto */
+    font-weight: 300; /* Peso da fonte */
+    font-style: italic; /* Estilo de fonte itálico */
+    text-align: center; /* Alinhar texto ao centro */
+  }
+  
+  .formcontato__success__message {
+    font-family: JetBrains Mono; /* Fonte da mensagem de sucesso */
+    font-size: 0.7rem; /* Tamanho de fonte */
+    color: var(--cor-de-texto); /* Cor do texto */
+    font-weight: 300; /* Peso da fonte */
+    font-style: italic; /* Estilo de fonte itálico */
+    text-align: center; /* Alinhar texto ao centro */
+  }
+  
+  /* Footer */
+  .footer__rodape {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: row; /* Direção dos itens na linha */
+    justify-content: center; /* Alinhar itens ao centro */
+    color: var(--cor-texto-secundario); /* Cor do texto secundário */
+    font-size: small; /* Tamanho de fonte pequeno */
+    margin-right: 14%; /* Margem direita */
+    margin-top: 10%; /* Margem superior */
+  }
+  
