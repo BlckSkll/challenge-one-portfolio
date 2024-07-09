@@ -1,26 +1,20 @@
-# Challenge ONE | Front End - Portfólio
----
+Sobre o Projeto
+Este é o meu projeto de portfólio desenvolvido como parte do desafio da formação Front End do Alura + ONE. Ele inclui uma página HTML estruturada com CSS e JavaScript para funcionalidades específicas.
 
-<p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/168887837-b6d26532-6782-48dc-92eb-e48bf6c57a15.png">
-</p>
-
-###  Primeiros Passos:
----
-#### 🔹Marque esse projeto com uma ⭐
-#### 🔹Siga as orientações do que temos neste repositório 📚
+Funcionalidades
+HTML Estruturado: Utilizei HTML semântico para criar diferentes seções como introdução, habilidades, projetos, e contato.
+Estilização com CSS: Utilizei CSS para estilizar o layout do portfólio, aplicando técnicas de design responsivo para diferentes tamanhos de tela.
+JavaScript para Interatividade: Implementei JavaScript para funcionalidades como validação de formulário e interações dinâmicas na página.
 
 
-### Analisando nosso repositório!
----
-### Este é o repositório base do nosso projeto, nele voce encontrará:
-#### 🔹index.html: Documento HTML finalizado que você pode utilizar em seu projeto. Fonte, CSS e JavaScript já linkado e todas as sessões comentadas. Sinta-se a vontade para executar o seu próprio HTML caso deseje;
-#### 🔹style.css: Documento de CSS com instruções de estilo e também algumas sugestões para seu desenvolvimento
-#### 🔹validacao.js: Documento vazio para que possa aplicar sua lógica de programação, trabalhando com a validação de formulário em JavaScript
-#### Ao clonar, ou realizar o download do projeto base, você tera essa apresentação:
+Estrutura do Projeto
 
+meu-portfolio/
+│
+├── index.html
+├── style.css
+└── script.js
 
-<p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/168888313-d031e9e1-1449-4b73-bd3c-3102223097f3.png">
-</p>
-
+Contato
+Contribuições são bem-vindas!
+Para mais informações ou sugestões, entre em contato comigo através do GitHub.
